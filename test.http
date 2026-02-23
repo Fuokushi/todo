@@ -1,0 +1,13 @@
+### GET all todos
+GET http://localhost:3000/todos
+
+### POST new todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+  "text": "Buy water"
+}
+
+### DELETE todo by id 
+DELETE http://localhost:3000/todos/6996dea5f381da81a6fce4ee
