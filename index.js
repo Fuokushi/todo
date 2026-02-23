@@ -2,7 +2,8 @@
 const cors = require('cors')
 const app = express()
 const port = 3000
-
+const dotenv = require('dotenv')
+dotenv.config()
 
 app.use(cors())
 
@@ -12,7 +13,7 @@ app.use(express.json())
 
 
 const mongoose = require('mongoose')
-const mongoDB = 'mongodb+srv://lionessyarush:Gfhjkm18022009@cluster0.othdvv9.mongodb.net/todos?appName=Cluster0'
+const mongoDB = process.env.mongoDB
 mongoose.connect(mongoDB)
 
 
