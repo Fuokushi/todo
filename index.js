@@ -13,7 +13,7 @@ app.use(express.json())
 
 
 const mongoose = require('mongoose')
-const mongoDB = mongoDB = "mongodb+srv://lionessyarush:Gfhjkm18022009@cluster0.othdvv9.mongodb.net/todos?appName=Cluster0"
+const mongoDB = "mongodb+srv://lionessyarush:Gfhjkm18022009@cluster0.othdvv9.mongodb.net/todos?appName=Cluster0"
 mongoose.connect(mongoDB)
 
 
